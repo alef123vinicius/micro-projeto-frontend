@@ -53,3 +53,12 @@ npm install @angular-devkit/schematics @angular-devkit/schematics-cli @angular-d
 npm install @angular/material
 npm install --save @angular/material @angular/animations @angular/cdk
 npm install --save angular/material2-builds angular/cdk-builds
+
+
+build para subir no docker
+
+npm run build:prod
+
+docker build -t alef123vinicius/micro-projeto-frontend .
+
+docker run -d -it -p 4200:80/tcp --name micro-projeto-frontend alef123vinicius/micro-projeto-frontend:latest

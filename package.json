@@ -3,10 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "build:prod": "ng build --configuration  production --base-href .",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --configuration production --base-href .",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "start-prod": "ng build --production --base-href . && static-server dist/ -p 4200"
   },
   "private": true,
   "dependencies": {
