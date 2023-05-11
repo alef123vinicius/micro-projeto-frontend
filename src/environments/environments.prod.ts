@@ -1,4 +1,4 @@
 export const environment = {
     PRODUCTION: true,
-    REST_URL: "http://aplication-test:9080"
+    REST_URL: "http://localhost:8080"
 }
